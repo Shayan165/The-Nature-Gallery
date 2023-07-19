@@ -1,0 +1,74 @@
+/* ---carousel slider */
+.c-item {
+  max-height: 680px;
+}
+
+.c-img {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+/* ---carousel slider */
+/* pagination */
+.page-number.active {
+  background-color: rgb(10, 88, 202);
+  color: white;
+}
+
+#pagination-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #ddd;
+}
+
+.pagination-numbers {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.pagination-total {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.page-number {
+  position: relative;
+  display: inline-block;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: var(--bs-pagination-color);
+  text-decoration: none;
+  background-color: var(--bs-pagination-bg);
+  border: var(--bs-pagination-border-width) solid
+    var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#previous-page {
+  cursor: pointer;
+}
+/* pagination */
+
+/* Media query */
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    width: 50px;
+  }
+}
